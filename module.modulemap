@@ -5,7 +5,7 @@ module CMySQLLinux [system] {
 }
 
 module CMySQLMac [system] {
-    header "/usr/local/include/mysql/mysql.h"
+    header "/usr/local/mysql/include/mysql.h"
     link "mysqlclient"
     export *
 }
