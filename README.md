@@ -23,7 +23,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-* To install MySQl ...
+* To install MySQL ...
 
 ```
 sudo apt-get install mysql-server
