@@ -17,16 +17,16 @@ Note: currently experiencing issues on OS X.
 
 ## Install MySQL via APT-GET (Linux)
 
-* Update your system:
+* Update your system (you may need ```sudo```):
 ```
-sudo apt-get update
-sudo apt-get upgrade
+apt-get update
+apt-get upgrade
 ```
 
 * To install MySQL ...
 
 ```
-sudo apt-get install mysql-server
+apt-get install mysql-server
 ```
 
 
