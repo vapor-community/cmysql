@@ -1,17 +1,7 @@
 # Qutheory - CMySQL - (Not Tested)
 
 ## Install MySQL via Brew (OS X) 
-* If you don't have homebrew visit the homebrew site http://brew.sh to install it.
-
-```
-brew doctor
-brew update
-```
-* Once everything is ok with the doctor and homebrew is update. You can then 
-
-```
-brew install mysql
-```
+follow link to download page http://dev.mysql.com/downloads/mysql/
 
 Note: currently experiencing issues on OS X. 
 
