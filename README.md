@@ -24,7 +24,7 @@ swift build -Xswiftc -I/usr/include/mariadb -Xlinker -L/usr/lib/x86_64-linux-gnu
 To use MariaDB instead of MySQL, add the following compiler flag when building:
 
 ```sh
--Xswiftc -DMYSQL
+-Xswiftc -DMARIADB
 ```
 
 - This tells the compiler to link the MariaDB library instead of the MySQL library.
