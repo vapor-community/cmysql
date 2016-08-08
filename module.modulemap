@@ -1,16 +1,14 @@
-#if MARIADB
-module CMySQLLinux [system] {
-    header "/usr/include/mariadb/mysql.h"
-    link "mariadb"
-    export *
-}
-#else
 module CMySQLLinux [system] {
     header "/usr/include/mysql/mysql.h"
     link "mysqlclient"
     export *
 }
-#endif
+
+module CMariaDBLinux [system] {
+    header "/usr/include/mariadb/mysql.h"
+    link "mariadb"
+    export *
+}
 
 module CMySQLMac [system] {
     header "/usr/local/include/mysql/mysql.h"
