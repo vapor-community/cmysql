@@ -1,26 +1,31 @@
-# Qutheory - CMySQL - (Not Tested)
+# CMySQL
+C module for MySQL
 
-## Install MySQL via Brew (OS X) 
-follow link to download page http://dev.mysql.com/downloads/mysql/
+## Building
 
-You may need to use the following command to build if you experience errors.
+**To build on macOS:**
 
 ```sh
-swift build -Xswiftc -I -Xswiftc /usr/local/mysql/include/ -Xlinker -L -Xlinker /usr/local/mysql/lib/
+swift build -Xlinker -L/usr/local/lib
 ```
 
-## Install MySQL via APT-GET (Linux)
+**To build on Linux:**
 
-* Update your system (you may need ```sudo```):
-```
-apt-get update
-apt-get upgrade
+```sh
+swift build -Xswiftc -I/usr/include/mariadb -Xlinker -L/usr/lib/x86_64-linux-gnu
 ```
 
-* To install MySQL ...
+- `-I` tells the compiler where to find the MariaDB header file `mysql.h`
+- `-L` tells the linker where to find MariaDB library.
+  - On macOS the library is called `libmysqlclient`, and on Linux the library is `libmariadb`.
+  
+## MariaDB
 
-```
-apt-get install mysql-server
+To use MariaDB instead of MySQL, add the following compiler flag when building:
+
+```sh
+-Xswiftc -DMYSQL
 ```
 
+- This tells the compiler to link the MariaDB library instead of the MySQL library.
 
