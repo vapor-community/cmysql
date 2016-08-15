@@ -4,6 +4,12 @@ module CMySQLLinux [system] {
     export *
 }
 
+module CMariaDBLinux [system] {
+    header "/usr/include/mariadb/mysql.h"
+    link "mariadb"
+    export *
+}
+
 module CMySQLMac [system] {
     header "/usr/local/include/mysql/mysql.h"
     link "mysqlclient"
