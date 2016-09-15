@@ -1,4 +1,5 @@
 # CMySQL
+
 C module for MySQL
 
 ## Building
@@ -38,3 +39,10 @@ swift build -Xswiftc -I/usr/include/mariadb -Xlinker -L/usr/lib/x86_64-linux-gnu
 - This simply changes the library/header paths and sets the same compatibility options shown above.
 - Note that on macOS the library is called `libmysqlclient`, while on Linux the library is called `libmariadb`.
 
+## 💧 Community
+
+Join the welcoming community of fellow Vapor developers in [slack](http://vapor.team).
+
+## 🔧 Compatibility
+
+This package has been tested on macOS and Ubuntu.
