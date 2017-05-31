@@ -1,7 +1,7 @@
 prefix=/usr/local/opt/mysql
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
-includedir=${prefix}/include/mysql
+includedir=${prefix}/include
 Name: MySQL
 Description: MySQL client library
 Version: 2.0
