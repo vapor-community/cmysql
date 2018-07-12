@@ -4,9 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "CMySQL",
-    pkgConfig: "cmysql",
+    pkgConfig: "mysqlclient",
     providers: [
-        .Brew("cmysql"),
-        .Apt("cmysql")
+        .Brew("mysql"),
+        .Apt("libmysqlclient-dev")
     ]
 )
